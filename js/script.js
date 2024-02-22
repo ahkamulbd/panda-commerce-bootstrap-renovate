@@ -22,3 +22,9 @@ const cards = document.getElementsByClassName('card');
 for (let card of cards) {
     card.style.borderRadius = '30px';
 }
+
+// Query 5: কোন একটা ফাংশন লিখো। সেটার ভিতরে কনসোল লগ হবে। এবং সেই ফাংশন টা ক্লিক হ্যান্ডলার হিসেবে কোন একটা বাটনে যোগ করো 
+
+function redLaltuBagButton() {
+    console.log('Red Laltu Bag Button Clicked')
+}
