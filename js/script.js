@@ -26,5 +26,23 @@ for (let card of cards) {
 // Query 5: কোন একটা ফাংশন লিখো। সেটার ভিতরে কনসোল লগ হবে। এবং সেই ফাংশন টা ক্লিক হ্যান্ডলার হিসেবে কোন একটা বাটনে যোগ করো 
 
 function redLaltuBagButton() {
-    console.log('Red Laltu Bag Button Clicked')
+    console.log('Red Laltu Bag Button Clicked');
 }
+
+// Query 6: এইবার নতুন করে সবগুলা Buy Now বাটনে এমন একটা ইভেন্ট হ্যান্ডলার যোগ করো। যাতে যেকোন একটা Buy Now বাটনে চাপ দিলে Card টা ওয়েবসাইট থেকে রিমুভ হয়ে যায়। একটু চিন্তা করে করার চেষ্টা করো।
+
+
+// Query 7: একদম নিচে একটা LET'S STAY IN TOUCH নামে একটা জিনিস আছে। সেখানে তুমি Submit বাটনটা Disable করে ফেলবে। তারপর কেউ যদি উপরে Input ফিল্ডে যদি একজাক্টলি Email শব্দটা লিখে। তাহলে বাটন একটিভ হবে। আর যদি অন্য কিছু লিখে তাহলে বাটনটা একটিভ হবে না। 
+
+document.getElementById('exampleInputEmail1').addEventListener('keyup', function (event) {
+    //console.log(event.target.value);
+    const submitInputText = event.target.value;
+    const submitButton = document.getElementById('submit-btn');
+
+    if (submitInputText === 'Email') {
+        submitButton.removeAttribute('disabled');
+    }
+    else {
+        submitButton.setAttribute('disabled', true);
+    }
+})
